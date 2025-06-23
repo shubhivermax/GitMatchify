@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*layout*/
+
+.page-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== TYPOGRAPHY ===== */
+
+.page-subtitle {
+  font-size: 20px;
+  color: #64748b;
+  font-weight: 400;
+  margin: 20px 0 40px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.signin-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* ===== SIGN IN COMPONENT ===== */
+
+.signin-container {
+  padding: 40px 96px 80px 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signin-card {
+  position: relative;
+  width: 384px;
+  height: 320px;
+  background: linear-gradient(to bottom right, #0f172a, #1e293b, #0f172a);
+  border-radius: 16px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border: 1px solid #334155;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.signin-shine-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transform: skewX(-12deg) translateX(-100%);
+  animation: shine 3s ease-in-out infinite;
+}
+
+.signin-inner-glow {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.5), transparent, rgba(15, 23, 42, 0.5));
+  border-radius: 16px;
+}
+
+.signin-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+.signin-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== FORM INPUTS ===== */
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(4px);
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #94a3b8;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 2px rgba(96, 165, 250, 0.2);
+}
+
+/* ===== BUTTONS ===== */
+
+.primary-button {
+  width: 100%;
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.primary-button:hover {
+  background: linear-gradient(to right, #1d4ed8, #1e40af);
+  transform: scale(1.02);
+}
+
+.signup{
+  width: 20%;
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  transform: scale(1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.signup:hover{
+  background: linear-gradient(to right, #1d4ed8, #1e40af);
+  transform: scale(1.02);
+}
+/* ===== ANIMATIONS ===== */
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%) skewX(-12deg);
+  }
+  100% {
+    transform: translateX(200%) skewX(-12deg);
+  }
+}
+
+@keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+  }
+  25% {
+    background-position: 50% 100%;
+    transform: rotate(5deg) scale(1.1);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: rotate(-3deg) scale(0.95);
+  }
+  75% {
+    background-position: 50% 0%;
+    transform: rotate(3deg) scale(1.05);
+  }
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+  }
+}
+
+.aurora-animation {
+  animation: aurora 8s ease-in-out infinite alternate;
+}
+
+.shine-animation {
+  animation: shine 3s ease-in-out infinite;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+@media (max-width: 768px) {
+  .signin-card {
+    width: 320px;
+    height: 280px;
+    padding: 32px;
+  }
+  
+  .page-subtitle {
+    font-size: 24px;
+  }
+  
+  .signin-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signin-card {
+    width: 280px;
+    height: 260px;
+    padding: 24px;
+  }
+  
+  .page-subtitle {
+    font-size: 20px;
+  }
+} 

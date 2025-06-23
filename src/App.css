@@ -40,3 +40,13 @@
 .read-the-docs {
   color: #888;
 }
+
+#root .subtitle{
+  font-size: 30px !important;
+  color: #64748b !important;
+  font-weight: 400 !important;
+  margin: 20px 0 40px 0 !important;
+  text-align: center !important;
+  letter-spacing: 0.5px !important;
+  opacity: 0.9 !important;
+}
