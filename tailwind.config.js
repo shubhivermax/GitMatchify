@@ -7,14 +7,8 @@ export default {
   theme: {
     extend: {
       animation: {
-        aurora: "aurora 10s ease-in-out infinite",
-      },
-      keyframes: {
-        aurora: {
-          "0%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-          "100%": { backgroundPosition: "0% 50%" },
-        },
+        aurora: "aurora 8s ease-in-out infinite alternate",
+        shine: "shine 3s ease-in-out infinite",
       },
     },
   },
