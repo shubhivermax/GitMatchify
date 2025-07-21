@@ -1,6 +1,5 @@
 import { useState, useEffect} from "react"
 
-
 const Register = () => {
 
   const [data, setData] = useState({
@@ -9,9 +8,6 @@ const Register = () => {
     password: '',
 
   })
-  useEffect(() => {
-    console.log("Current form data:", data);
-  }, [data]);
 
   const registerUser = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
