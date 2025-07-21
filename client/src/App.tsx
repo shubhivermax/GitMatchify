@@ -6,6 +6,11 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Register from './pages/Register';
 import Login from './pages/Login';
+import axios from 'axios';
+
+axios.defaults.baseURL='http://localhost:5173';
+axios.defaults.withCredentials= true;
+
 
 
 function App() {
