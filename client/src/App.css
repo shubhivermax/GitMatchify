@@ -101,10 +101,21 @@
 .page-container {
   margin: 0;
   padding: 0;
+  
+}
+
+.page-subtitle {
+    font-size: 20px;
+    color: #64748b;
+    font-weight: 400;
+    
+    text-align: center;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
 }
 
 .page-background {
-  min-height: 100vh; /* full viewport height */
+  
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,8 +123,9 @@
   display: flex;
   justify-content: center; /* or flex-start if you want content top-aligned */
   align-items: center; /* or flex-start */
-  padding: 2rem;
+  /*padding: 2rem;*/
   box-sizing: border-box;
+  height: 100vh;
 }
 
 /* Adjust content box styling */
@@ -126,7 +138,7 @@
   width: 100%;
   
   text-align: center;
-  margin-top: -400px;
+  margin-top: -250px;
 }
 
 /* Titles and buttons can stay as you already styled */
@@ -139,7 +151,7 @@ html, body, #root {
 }
 
 .app-background {
-  min-height: 100vh;
+  height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-position: center;
