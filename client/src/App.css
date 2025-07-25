@@ -80,6 +80,7 @@
 
 .home-desc {
   font-size: 1.125rem; /* text-lg */
+  font-weight:bolder;
   color: #4b5563; /* text-gray-700 */
   margin-bottom: 1.5rem; /* mb-6 */
 }
@@ -117,13 +118,15 @@
 
 /* Adjust content box styling */
 .home-box {
-  background-color: rgba(255, 255, 255, 0.85);
+  
+  font-weight: 20px;
   padding: 2rem;
   border-radius: 1rem;
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  
   text-align: center;
+  margin-top: -400px;
 }
 
 /* Titles and buttons can stay as you already styled */
