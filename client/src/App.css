@@ -69,14 +69,7 @@
   background-repeat: no-repeat;
 }
 
-.home-box {
-  background-color: rgba(255, 255, 255, 0.8); /* bg-white bg-opacity-80 */
-  padding: 2rem; /* p-8 */
-  border-radius: 0.75rem; /* rounded-xl */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
-  max-width: 36rem; /* max-w-xl */
-  width: 100%;
-}
+
 
 .home-title {
   font-size: 2.25rem; /* text-4xl */
@@ -103,4 +96,56 @@
 
 .home-button:hover {
   background-color: #6d28d9; /* hover:bg-purple-700 */
+}
+.page-container {
+  margin: 0;
+  padding: 0;
+}
+
+.page-background {
+  min-height: 100vh; /* full viewport height */
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* or flex-start if you want content top-aligned */
+  align-items: center; /* or flex-start */
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Adjust content box styling */
+.home-box {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Titles and buttons can stay as you already styled */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app-background {
+  min-height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* optional padding if needed */
+  padding-top: 2rem;
+  box-sizing: border-box;
+  color: white; /* maybe adjust text color since bg might be dark */
 }

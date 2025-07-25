@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import GitBgHome from '../assets/GitBgHome.png';
-import '../App.css'
+import GitBgHome from '../assets/HomeBG.png';
+import '../App.css';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,8 +11,8 @@ const Home = () => {
 
   return (
     <div
-      className="home-container"
-      style={{ backgroundImage: `url(${GitBgHome})` }}
+      className="page-background"
+      
     >
       <div className="home-box">
         <h1 className="home-title">Welcome to GitMatchify</h1>
@@ -28,3 +28,4 @@ const Home = () => {
 };
 
 export default Home;
+
