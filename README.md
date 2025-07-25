@@ -1,4 +1,5 @@
 # GitMatchify 🚀
+![Demo](client/src/assets/demo.png)
 
 A modern web application that connects developers with projects, built with React, TypeScript, and Node.js.
 
